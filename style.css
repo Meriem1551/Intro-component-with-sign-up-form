@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+    /*colors*/
+    --Red: hsl(0, 100%, 74%) ;
+    --Green:  hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%) ;
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    /*fonts*/
+    --Font-size:16px;
+   --Font-family:'Poppins';
+   --Font-weight-regular:400;
+   --Font-weight-medium:500;
+   --Font-weight-semibold:600;
+   --Font-weight-bold:700;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: var(--Red);
+    position: relative;
+    display: grid;
+    place-items: center;
+    font-family: var(--Font-family);
+}
+main{
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+#intro{
+    align-items: center;
+}
+#intro>h1{
+   font-weight: var(--Font-weight-bold);
+   color: white;
+   font-size: 3rem;
+   width: 500px;
+   line-height: 55px;
+}
+#intro>p{
+    line-height: 25px;
+    font-weight: var(--Font-weight-regular);
+    color: white;
+    font-size:var(--Font-size);
+    width: 550px;
+    margin-top: 30px;
+ }
+ #registration{
+    display: grid;
+ }
+ .free{
+    color: white;
+    font-weight: var(--Font-weight-semibold);
+ }
+ #title{
+    background-color: var(--Blue);
+    padding: 15px 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:   0px  7px  rgb(207, 104, 104);
+    
+ }
+ #title>p{
+    color: var(--Grayish-Blue);
+    font-weight: var(--Font-weight-regular);
+    font-size: var(--Font-size);
+ }
+ #form{
+    margin-top: 20px;
+    display: grid;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:   0px  7px  rgb(207, 104, 104);
+ }
+ #form>div{
+    display: grid;
+
+ }
+ .input{
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 2px solid var(--Grayish-Blue);
+    font-weight: var(--Font-weight-semibold);
+    color: var(--Dark-Blue);
+ }
+ #form>div>small{
+    text-align: end;
+    color: var(--Red);
+    font-weight: var(--Font-weight-regular);
+    display: none;
+ }
+ #form>img{
+    margin-left: auto;
+    position: relative;
+    top: 36px;
+    right: 10px;
+    visibility: hidden;
+ }
+ input::placeholder{
+    font-weight: var(--Font-weight-semibold);
+ }
+ #button{
+    background-color: var(--Green);
+    padding: 13px 0px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 25px;
+    color: white;
+    font-weight: var(--Font-weight-medium);
+    box-shadow:   0px  5px  hsl(154, 56%, 43%);
+    letter-spacing: 1px;
+ }
+ #button:hover{
+    background-color: hsl(154, 87%, 72%);
+    cursor: pointer;
+ }
+ #form>p{
+    color: var(--Grayish-Blue);
+    font-size: 8px;
+    font-weight: var(--Font-weight-medium);
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+ }
+ .Terms{
+    color: var(--Red);
+    font-weight: var(--Font-weight-bold);
+ }
+ @media (max-width:550px) {
+    body{
+        overflow-x: hidden;
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+    main{
+        display: grid;
+       place-items: center;
+       padding: 80px 20px;
+       padding-right: 0px;
+     
+    }
+    #intro>h1{
+        padding:0px 45px;
+        font-size: 2rem;
+        width: 400px;
+        line-height: 40px;
+    }
+    #intro>p{
+    line-height: 27px;
+    width: 370px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0px 25px;
+    }
+    #title{
+        margin-top: 50px;
+        padding: 15px 90px;
+        width: 90%;
+    }
+    #form{
+        padding: 0px 20px;
+        width: 90%;
+    }
+    #form>p{
+        font-size: 10px;
+        width: 230px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: 45px;
+     }
+ }
